@@ -1,0 +1,127 @@
+//html, body {
+	height: 100%;
+}
+body {
+	font-family: 'Montserrat', sans-serif;
+	background: linear-gradient(0deg, #2196f3, #ffa689) fixed;
+}
+.container div {
+	padding-top: 60px;
+}
+.container div:last-child {
+	padding-bottom: 60px;
+}
+h1 {
+	margin: 20px 0;
+	font-size: 2rem;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+h2 {
+	margin-bottom: 20px;
+	font-size: 1.7rem;
+	font-weight: 500;
+}
+h3 {
+	margin-bottom: 20px;
+	font-size: 1.5rem;
+	font-weight: 600;
+}
+p {
+	font-size: 1rem;
+	//word-break: break-all;
+}
+.profile-form {
+	margin: 110px 0;
+	padding: 50px;
+	color: #fff;
+	background: #413f9c7a;
+	border-radius: 10px;
+}
+.profile-form h2 {
+	width: 320px;
+	border-bottom: 2px solid #fff;
+}
+form {
+	font-size: 14px;
+}
+label {
+	width: 250px;
+	margin-top: 30px;
+	vertical-align: top;
+}
+label:nth-of-type(4) {
+	margin-top: 23px !important;
+}
+label:nth-of-type(6) {
+	margin-top: 0 !important;
+	vertical-align: middle;
+}
+label:nth-of-type(6) a {
+	color: #fff;
+	text-decoration: none;
+}
+label:nth-of-type(6) a:hover {
+	text-decoration: underline;
+}
+input, textarea {
+	width: 400px;
+	margin-top: 20px;
+	padding: 5px 10px;
+	font-size: 13px;
+	color: #fff;
+	background: transparent;
+	border: 1px solid #d3d5d6;
+	border-radius: 3px;
+}
+input {
+	height: 40px;
+}
+input[type="file"] {
+	border: none;
+}
+input[type="checkbox"] {
+	width: 20px;
+	height: 20px;
+	margin-right: 10px;
+	border: 1px solid #d3d5d6;
+	border-radius: 3px;
+}
+input::placeholder, 
+textarea::placeholder {
+	color: #d3d5d6;
+}
+input:focus,
+textarea:focus,
+button:focus {
+	outline: none;
+}
+form .required-star {
+	margin-left: 5px;
+	color: #7d0000;
+}
+form .error {
+	display: none;
+	margin-top: 5px;
+	margin-left: 260px;
+	font-size: 13px;
+	color: #7d0000;
+}
+button {
+	width: 150px;
+	margin: 40px 20px 20px 0;
+	padding: 7px;
+	color: #fff;
+	background: transparent;
+	border: 1px solid #fff;
+	border-radius: 3px;
+}
+button:hover {
+	color: #413f9c7a;
+	background: #fff;
+}
+button:active {
+	color: #fff;
+	background: #413f9c7a;
+	border: 1px solid #413f9c7a;
+}

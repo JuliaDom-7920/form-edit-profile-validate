@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Валідація форм</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+	<link rel="stylesheet" href="style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+	<div class="container">
+		<div class="profile-form">
+			<h2 class=>Редагувати профіль</h2>
+			<form name="form" onsubmit="return check(this);" method="post" action="" class="profile">
+				<label for="name">Ваше ім’я<span class="required-star">*</span></label>
+				<input type="text" name="name" id="name" placeholder="Ім’я Прізвище"><br>
+				<span class="error">Ім’я повинно містити не менше 3 символів!</span>
+				<label for="email">Ваша електронна пошта<span class="required-star">*</span></label>
+				<input type="text" name="email" id="email" placeholder="email@mail.com"><br>
+				<span class="error">Некоректна електронна пошта!</span>
+				<label for="password">Ваш пароль<span class="required-star">*</span></label>
+				<input type="password" name="password" id="password" placeholder="Мінімальна довжина 6 символів"><br>
+				<span class="error">Пароль повинен містити не менше 6 символів!</span>
+				<label for="comment">Ваша біографія:</label>
+				<textarea name="comment" id="comment" rows="4" placeholder="Ваша біографія"></textarea><br>
+				<label for="file">Завантажте зображення:</label>
+				<input type="file" name="file" id="file"></input><br>
+				<input type="checkbox" name="rules" id="rules"></input>
+				<label for="rules"><a href="#" title="Ознайомитися з правилами конфіденційності">Ознайомлений(а) з правилами</a><span class="required-star">*</span></label><br>
+				<span class="error">Поставте відмітку про те, що ви ознайомилися з правилами!</span>
+				<button type="submit" id="submit">Відправити</button>
+				<button type="reset" id="reset">Очистити</button>
+			</form>
+		</div>
+	</div>
+	
+	<script src="script.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</body>
+</html>
